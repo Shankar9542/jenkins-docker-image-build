@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        imagename = "ganeshpoloju/jenkinss"
+        imagename = "shankar367/jenkins"
         dockerImage = ''
         containerName = 'my-container'
         dockerHubCredentials = 'admin'
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git(url: 'https://github.com/GANESH0369/jenkins.git', branch: 'main')
+                git(url: 'https://github.com/Shankar9542/jenkins-docker-image-build', branch: 'main')
             }
         }
 
